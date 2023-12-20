@@ -5,5 +5,5 @@ def
 def
   cicd.ConBuild()
 {
-sh 'mvn package'
+  sh 'mvn package'
 }
