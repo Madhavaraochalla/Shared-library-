@@ -1,9 +1,9 @@
-def cicd.ConDownload(repo)
+def ConDownload(repo)
      {
            git "https://github.com/Madhavaraochalla/${repo}.git"
      }
          
-def cicd.ConBuild()
+def ConBuild()
 {
  
 }
