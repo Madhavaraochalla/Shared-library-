@@ -5,5 +5,5 @@ def ConDownload(repo)
          
 def ConBuild()
 {
- 
+ sh 'mvn package'
 }
