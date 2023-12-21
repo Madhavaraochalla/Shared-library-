@@ -10,5 +10,5 @@ def ConBuild()
 
 def ConDeploy(jobname,ip,appname)
 {
-     deploy adapters: [tomcat9(credentialsId: '0fd54dbb-706f-4ddc-b969-${jobname}', path: '', url: 'http://${ip}:8080')], contextPath: '${appname}', war: '**/*.war'
+    sh "scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war   ubuntu@${ip}:/var/lib/tomcat9/webapps/${appname}.war"
 }
